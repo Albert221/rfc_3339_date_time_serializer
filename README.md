@@ -13,6 +13,8 @@ For example, Go's `encoding/json` serializes dates with 7 _time-secfrac_ charact
 In your `serializers.dart`:
 
 ```dart
+import 'rfc_3339_date_time_serializer/rfc_3339_date_time_serializer.dart';
+
 @SerializersFor(const [/* (...) */])
 final Serializers modelsSerializers = (_$modelsSerializers.toBuilder()
       ..addPlugin(StandardJsonPlugin())
