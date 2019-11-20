@@ -19,3 +19,7 @@ final Serializers modelsSerializers = (_$modelsSerializers.toBuilder()
       ..add(RFC3339DateTimeSerializer())) // this is the line you need to add
     .build();
 ```
+
+
+[built_value]: https://pub.dev/packages/built_value
+[issue]: https://github.com/dart-lang/sdk/issues/24205
