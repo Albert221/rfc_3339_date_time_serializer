@@ -1,5 +1,7 @@
 name: rfc_3339_date_time_serializer
-description: RFC 3339 DateTime serializer for built_value.
+description: >
+  RFC 3339 DateTime serializer for built_value.
+  To address the issue with datetimes with more than 6 characters in time-secfrac.
 version: 1.0.0
 homepage: https://github.com/Albert221/rfc_3339_date_time_serializer
 
