@@ -32,11 +32,6 @@ class RFC3339DateTimeSerializer extends PrimitiveSerializer<DateTime> {
   @override
   Object serialize(Serializers serializers, DateTime dateTime,
       {FullType specifiedType = FullType.unspecified}) {
-    if (!dateTime.isUtc) {
-      throw ArgumentError.value(
-          dateTime, 'dateTime', 'Must be in utc for serialization.');
-    }
-
     return dateTime.toIso8601String();
   }
 
