@@ -1,6 +1,5 @@
-import 'package:test/test.dart';
-
 import 'package:rfc_3339_date_time_serializer/rfc_3339_date_time_serializer.dart';
+import 'package:test/test.dart';
 
 void main() {
   test('correctly parses RFC 3339 dates', () {
@@ -10,6 +9,7 @@ void main() {
       // ISO 8601
       '2019-08-09T06:55:01.896826+05:00': DateTime.utc(2019, 8, 9, 1, 55, 1, 896, 826),
       '2019-08-09T06:55:01.896826Z': DateTime.utc(2019, 8, 9, 6, 55, 1, 896, 826),
+      '2019-11-19T01:21:11.021105': DateTime(2019, 11, 19, 1, 21, 11, 021, 105),
 
       // RFC 3339
       '2019-05-31T10:35:45.347333481Z': DateTime.utc(2019, 5, 31, 10, 35, 45, 347, 333),
